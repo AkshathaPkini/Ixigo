@@ -1,7 +1,7 @@
-package Pages;
+package pages;
 
-import Common.Constants;
-import Common.GenericMethods;
+import common.Constants;
+import common.GenericMethods;
 import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

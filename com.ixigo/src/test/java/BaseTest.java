@@ -1,6 +1,6 @@
-import Common.Config;
-import Common.Constants;
-import Common.DataSheetConstants;
+import common.Config;
+import common.Constants;
+import common.DataSheetConstants;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -223,13 +223,13 @@ public  Properties readPropertiesFile(String fileName) throws IOException {
             test.log(Status.FAIL, "Screenshot below: ");
             test.addScreenCaptureFromPath(path);
         }
-        // driver.quit();
+         driver.quit();
         extent.flush();
     }
 
     @AfterSuite
     public void teardown() throws IOException {
-/*
+
         if(driver!=null) {
             Runtime rt = Runtime.getRuntime();
             rt.exec("taskkill /F /IM chromedriver.exe");
@@ -237,7 +237,7 @@ public  Properties readPropertiesFile(String fileName) throws IOException {
 
 
         }
-*/
+
     }
 
 
